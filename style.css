@@ -1,0 +1,92 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+body{
+    font-family: tahoma;
+    font-size: 16px;
+}
+.tieude{
+    color:rgb(229, 255, 0);
+}
+#menu {
+    width:650px;
+    height:40px;
+    background-color: rgb(20, 88, 109);
+    margin:50px auto;
+}
+ul.bo >li{
+    list-style: none;
+    float:left;
+    position:relative;
+}
+ul.bo> li> a{
+    text-decoration: none;
+    color:white;
+    padding: 0px 15px 0px 15px;
+    line-height:40px ; 
+    display:block;
+}
+ul.bo >li> a:hover{
+    background:turquoise;
+    color:black;
+    transition:ease-in 0.60s;
+    -moz-transition:ease-in 0.60s;
+    -webkit-transition:ease-in 0.60s;
+}
+ul.con{
+    width:250px;
+    background:rgb(0, 174, 255);
+    min-height:120px;
+    display: none;
+    position:absolute;
+} 
+ul.con{
+    list-style: none;
+}
+ul.con li a{
+    color: white;
+    text-decoration: none;
+    display:block;
+    border-top: 2px solid #ccc  ;
+    line-height: 40px;
+    text-indent:10px;
+}
+ul.con li a:hover{
+    background:turquoise;
+    color:black;
+    transition:ease-in 0.60s;
+    -moz-transition:ease-in 0.60s;
+    -webkit-transition:ease-in 0.60s;
+}
+ul.bo >li:hover ul.con{
+    display: block;
+}
+.khoitrangchu{
+    background-color: rgb(212, 212, 212);
+    width: 960px;
+    height: 400px;
+    margin:0 auto;
+    margin-bottom: 20px;
+    padding:30px;
+    border:1px solid black;
+}
+.doan{
+    font-size: 18px;
+    font-family: Arial;
+    margin-top:15px;
+    line-height: 30px;
+}
+.anh{
+    width:250px;
+    float:left;
+    margin: 20px;
+}
+.hoverh2{
+    text-decoration:underline;
+}
+.hoverh2:hover{
+    color:red;
+    transition: ease-in 1s;
+}
+
