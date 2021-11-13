@@ -6,14 +6,19 @@ body{
     font-family: tahoma;
     font-size: 16px;
 }
+#background{
+    background: url('hinh.jpg');
+    background-attachment: fixed;
+}
 .tieude{
     color:rgb(229, 255, 0);
 }
 #menu {
-    width:650px;
+    width:645px;
     height:40px;
     background-color: rgb(20, 88, 109);
     margin:50px auto;
+    
 }
 ul.bo >li{
     list-style: none;
@@ -23,7 +28,7 @@ ul.bo >li{
 ul.bo> li> a{
     text-decoration: none;
     color:white;
-    padding: 0px 15px 0px 15px;
+    padding: 0px 19px 0px 16px;
     line-height:40px ; 
     display:block;
 }
@@ -62,14 +67,14 @@ ul.con li a:hover{
 ul.bo >li:hover ul.con{
     display: block;
 }
-.khoitrangchu{
-    background-color: rgb(212, 212, 212);
+.khoitrangchu2{
+    background-color: rgb(214, 194, 194);
     width: 960px;
-    height: 400px;
+    height: 600px;
     margin:0 auto;
-    margin-bottom: 20px;
+    margin-bottom:5px;
     padding:30px;
-    border:1px solid black;
+    border:1px solid rgb(255, 255, 255);
 }
 .doan{
     font-size: 18px;
@@ -80,7 +85,8 @@ ul.bo >li:hover ul.con{
 .anh{
     width:250px;
     float:left;
-    margin: 20px;
+    margin: 33px;
+
 }
 .hoverh2{
     text-decoration:underline;
@@ -89,4 +95,99 @@ ul.bo >li:hover ul.con{
     color:red;
     transition: ease-in 1s;
 }
+div.tieude{
+    color:red;
+    border-bottom: 3px solid red;
+    font-weight: bold;
+    font-family:Arial;
+}
+span.rk1{
+    color:rgb(0, 0, 0);
+    background-color: red;
+}
+span.rk2{
+    color:rgb(0, 0, 0);
+    background-color: red;
+    margin-left:485px;
+}
+div.icon-follow{
+    background-color: #385998;
+    width:120px;
+    height: 120px;
+    float:right;
+    margin-top:5px;
+    margin-left:5px;
+    text-align: center;
+    transition:0.6s;
+}
+div.icon-follow i{
+    font-size:50px;
+    color:white;
+    display: block;
+    margin-top:10px;
+}
+.icon-follow a{
+    font-size:15px;
+    background-color: transparent;
+    font-weight:bold;
+    color:white;
+}
+div.icon-follow-youtube{
+    background-color: red;
+    width:120px;
+    height: 120px;
+    float:right;
+    margin-top:5px;
+    margin-left:5px;
+    text-align: center;
+    transition:0.6s;
+}
+div.icon-follow-youtube i{
+    font-size:60px;
+    color:white;
+    display: block;
+    margin-top:10px;
+}
+div.icon-follow-youtube a{
+    font-size:15px;
+    background-color: transparent;
+    font-weight:bold;
+    color:white;
+}
+div.icon-follow:hover{
+    background-color:black;
+    margin-top:15px;
+    transition:0.6s;
+}
+div.icon-follow-youtube:hover{
+    background-color:black;
+    margin-top:15px;
+    transition:0.6s;
+
+    
+}
+div.block-new{
+    width:900px;
+    height:200px;
+    background-color:rgb(214, 194, 194) ;
+    border:1px solid rgb(156, 5, 5);
+    margin:5px;
+}
+div.block-new img{
+    float:left;
+}
+div.block-new a{
+    text-decoration: none;
+    font-size:30px;
+    font-weight:bold;
+    color:black;
+    display: block;
+    margin-top:10px;
+
+}
+div.block-new a:hover{
+    color:white;
+    background-color:rgba(255, 0, 0, 0.548);
+}
+
 
