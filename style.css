@@ -1,6 +1,7 @@
 *{
     margin:0px;
     padding:0px;
+    border-radius: 4px;
 }
 body{
     font-family: tahoma;
@@ -13,12 +14,43 @@ body{
 .tieude{
     color:rgb(229, 255, 0);
 }
-#menu {
-    width:645px;
-    height:40px;
-    background-color: rgb(20, 88, 109);
-    margin:50px auto;
+.logo img{
+    width:60px;
+    height:60px;
     
+}
+.canle{
+    margin:auto;
+    max-width:960px;
+}
+.noidung{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header{
+    position: fixed;
+    top:0;
+    left: 0;
+    width:100%;
+    border-bottom: 1px solid #a5a5a5fb;
+    transition: all 0.7s ease-in-out;
+    padding:17px 0px;
+    
+}
+header.sticky{
+    background: rgb(172, 166, 166);
+    opacity: 0.9;
+    padding: 4px 0px;
+}
+header.sticky .logo{
+    color:black;
+}
+header.sticky .bo> li> a{
+    color:black;
+}
+#menu {
+    display:flex;
 }
 ul.bo >li{
     list-style: none;
@@ -27,13 +59,14 @@ ul.bo >li{
 }
 ul.bo> li> a{
     text-decoration: none;
+    text-transform: uppercase;
     color:white;
-    padding: 0px 19px 0px 16px;
+    padding: 10px 20px;
     line-height:40px ; 
     display:block;
 }
 ul.bo >li> a:hover{
-    background:turquoise;
+    background:rgb(214 194 194 / 55%);
     color:black;
     transition:ease-in 0.60s;
     -moz-transition:ease-in 0.60s;
@@ -41,14 +74,12 @@ ul.bo >li> a:hover{
 }
 ul.con{
     width:250px;
-    background:rgb(0, 174, 255);
+    background:rgb(70, 123, 153);
     min-height:120px;
     display: none;
     position:absolute;
-} 
-ul.con{
     list-style: none;
-}
+} 
 ul.con li a{
     color: white;
     text-decoration: none;
@@ -58,7 +89,7 @@ ul.con li a{
     text-indent:10px;
 }
 ul.con li a:hover{
-    background:turquoise;
+    background:rgb(214 194 194 / 55%);
     color:black;
     transition:ease-in 0.60s;
     -moz-transition:ease-in 0.60s;
@@ -67,14 +98,49 @@ ul.con li a:hover{
 ul.bo >li:hover ul.con{
     display: block;
 }
-.khoitrangchu2{
-    background-color: rgb(214, 194, 194);
+.khoitrangchu1{
+    background-color: rgb(214 194 194 / 55%);
     width: 960px;
     height: 600px;
     margin:0 auto;
-    margin-bottom:5px;
+    margin-top:100px;
+    margin-bottom:10px;
     padding:30px;
     border:1px solid rgb(255, 255, 255);
+}
+.khoitrangchu2{
+    background-color: rgb(214 194 194 / 55%);
+    width: 960px;
+    height: 600px;
+    margin:0 auto;
+    margin-bottom:10px;
+    padding:30px;
+    border:1px solid rgb(255, 255, 255);
+}
+.khung3{
+    background-color: rgb(214 194 194 / 55%);
+    width: 960px;
+    height: 600px;
+    margin:0 auto;
+    margin-bottom:10px;
+    padding:30px;
+    border:1px solid rgb(255, 255, 255);
+}
+.khung4{
+    background-color: rgb(214 194 194 / 55%);
+    width: 960px;
+    height: 600px;
+    margin:0 auto;
+    margin-bottom:10px;
+    padding:30px;
+
+    /* combo căn chỉnh hàng ngang nhé */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    border:1px solid rgb(255, 255, 255);
+    text-align: center;
 }
 .doan{
     font-size: 18px;
@@ -189,5 +255,184 @@ div.block-new a:hover{
     color:white;
     background-color:rgba(255, 0, 0, 0.548);
 }
+div.khung3 p{
+    color:brown;
+    font-size: 30px;
+    margin-left:35%;
+    margin-bottom: 10px;
+    
+}
+div.product{
+    width:270px;
+    height:320px;
+    padding:5px;
+    background-color: rgb(160, 76, 142);
+    float:left;
+    margin-left:36px;
+    position: relative;
+    overflow: hidden;
+}
+div.product img{
+    width:270px;
+    height:320px;
+    transition: 1s;
+}
+div.product:hover img{ /*zoom ảnh khi đưa con trỏ chuột vào */
+    transform: scale(1.3);
+    transition: 1s;
+}
+div.product a{
+    display: block;
+    font-family: 'Praise', cursive;
+    width:270px;
+    height:70px;
+    font-size: 30px;
+    text-decoration: none;
+    color:white;
+    background-color: black;
+    opacity:0.6;
+    text-align: center;
+    position: absolute;
+    bottom:0px;
+    left:0px;
+    bottom:-70px;
+    transition: 0.7s;
+
+}
+div.product:hover a{
+    bottom: 0px;
+    transition: 0.7s;
+}
+div.product p{
+    width:70px;
+    height:41px;
+    color:white;
+    font-size:30px;
+    font-family: Tahoma;
+    font-weight:bold;
+    border-radius: 4px; /* Tăng thêm độ bo góc cho nó mềm mại hơn */
+    background-color: orange;
+    text-align: center;
+    position: absolute;
+    bottom:63px;
+    left:-90px;
+    bottom:-70px;
+    transition: 0.7s;
+}
+div.product:hover p{
+    bottom:60px;
+    transition: 0.7s;
+}
+div.layer{
+    width:250px;
+    height:250px;
+    background-color: yellowgreen;
+    overflow: hidden;
+    position: relative;
 
 
+}
+div.layer img{
+    width:200px;
+    height: 200px;
+}
+div.layer2 img{
+    width:200px;
+    height: 200px;
+}
+div.layer p{
+    width:100%;
+    height:50px;
+    background-color: rgba(0, 0, 0, 0.356);
+    color:white;
+    text-align: center;
+    font-family: 'Praise', cursive;
+    font-size: 40px;
+    position: absolute;
+    bottom:-50px;
+    transition: 0.7s;
+}
+div.layer:hover p{
+    bottom: 0px;
+    transition: 0.7s;
+}
+div.layer div{
+    width: 100px;
+    height: 50px;
+    background-color: tomato;
+    position: absolute;
+    top: -12px;
+    left: -38px;
+    transform:rotate(-45deg); /* Quay cái hình 1 góc nhất định */
+}
+div.layer2{
+    width:250px;
+    height:250px;
+    background-color: rgb(214 194 194 / 0%);
+    position: relative;
+    transition: 0.7s;
+}
+div.layer2-1{
+    width:250px;
+    height:250px;
+    background-color: yellowgreen;
+    overflow: hidden;
+    position:absolute;
+    top:0px;
+    left:0px;
+    transition: 0.7s;
+}
+div.layer2 p{
+    width:100%;
+    height:50px;
+    background-color: rgba(0, 0, 0, 0.356);
+    color:white;
+    text-align: center;
+    font-family: 'Praise', cursive;
+    font-size: 40px;
+    position: absolute;
+    bottom:-50px;
+    transition: 0.7s;
+}
+div.layer2:hover p{
+    bottom: 0px;
+    transition: 0.7s;
+    
+}
+div.layer2:hover .layer2-1{
+    left:40px;
+    top:20px;
+    transition: 0.7s;
+}
+div.layer2-1 div{
+    width: 100px;
+    height: 50px;
+    background-color: tomato;
+    position: absolute;
+    top: -12px;
+    left: -38px;
+    transform:rotate(-45deg); /* Quay cái hình 1 góc nhất định */
+}
+div.layer2-2{
+    width:250px;
+    height:250px;
+    background-color: yellowgreen;
+    overflow: hidden;
+    position:absolute;
+    top:0px;
+    left:0px;
+    transition: 0.7s;
+}
+div.layer2-2 div{
+    width: 100px;
+    height: 50px;
+    background-color: tomato;
+    position: absolute;
+    top: -12px;
+    left: -38px;
+    transform:rotate(-45deg); /* Quay cái hình 1 góc nhất định */
+}
+div.layer2:hover .layer2-2{
+    left:40px;
+    transition: 0.7s;
+}
